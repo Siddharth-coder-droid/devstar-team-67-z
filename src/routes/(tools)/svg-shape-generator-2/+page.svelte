@@ -68,8 +68,8 @@
       img.src = url;
       img.onload = () => {
         const canvas = document.createElement('canvas');
-        canvas.width = 600; // Match the SVG width
-        canvas.height = 600; // Match the SVG height
+        canvas.width = 600;
+        canvas.height = 600;
         const ctx = canvas.getContext('2d');
         ctx.drawImage(img, 0, 0);
         canvas.toBlob((blob) => {
@@ -162,14 +162,14 @@
   </div>
   
 <style>
-/* body {
+.body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
-} */
+}
 
 .card {
   display: flex;
